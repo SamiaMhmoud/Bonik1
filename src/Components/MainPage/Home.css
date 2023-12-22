@@ -1,0 +1,120 @@
+.home {
+    margin-bottom: 10px;
+}
+
+/* ============== Categories ==================== */
+.category {
+    box-shadow: rgb(43 52 69 / 10%) 0px 4px 16px;
+    background-color: #fff;
+    width: 27%;
+    padding: 12px 0;
+    border-radius: 5px;
+    margin-top: 5px;
+    height: fit-content;
+}
+.category .box {
+    padding: 6px 0 6px 20px;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.category .box:hover {
+    background-color: #ffe1e6;
+}
+.home .category img {
+    width: 35px;
+}
+/* ============== // Categories // ==================== */
+
+/* ============== Slider ==================== */
+.slider-container {
+    margin-right: 6px;
+}
+.home-slider .box{
+    margin-top: 80px;
+}
+.home-slider h1 {
+    font-size: 45px;
+    line-height: 55px;
+    margin: 50px 0 20px 0;
+}
+.home-slider p {
+    margin: 20px 0;
+    color: #48525a;
+}
+.home-slider ul {
+    position: absolute;
+    bottom: 30px;
+}
+.home-slider ul li {
+    border: 1px solid #b8b7b7;
+    border-radius: 50%;
+    padding: 5px;
+}
+.home-slider ul li button {
+    background: transparent !important;
+    color: transparent !important;
+}
+.home-slider ul li button::before {
+    font-size: 12px !important;
+    color: #05192f !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.home-slider ul li button:hover::before {
+    color: #01142a !important;
+    opacity: .75 !important;
+}
+.home-slider .left {
+    width: 70%;
+}
+.home-slider .cover {
+    width: 30%;
+}
+.home-slider .cover img {
+    width: 100%;
+    height: 100%;
+}
+
+/* ============== // Slider // ==================== */
+@media(max-width: 566px) {
+    .home-slider .box {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .home-slider .cover {
+        width: 50%;
+    }
+    .home-slider .left {
+        width: 100%;
+    }
+}
+@media(max-width : 991px) {
+    .category {
+        display: none;
+    }
+    .home-slider {
+        width: 100%;
+    }
+}
+
+/* ==================== media quiry ==================== */
+@media(max-width: 768px) {
+    .home-slider .box {
+        margin: 40px 0 !important;
+    }
+    .home-slider h1 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .home-slider p {
+        font-size: 13px;
+    }
+    .home-slider .main-btn {
+        padding: 10px 15px;
+        font-size: 13px;
+    }
+}

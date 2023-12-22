@@ -1,0 +1,9 @@
+@media(max-width: 991px) {
+    .annocument .container {
+        flex-direction: column;
+    }
+    .annocument .img {
+        width: 100% !important;
+        margin-bottom: 10px;
+    }
+}

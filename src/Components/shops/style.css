@@ -1,0 +1,108 @@
+.shop {
+    position: relative;
+}
+.sgrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px ,1fr));
+    grid-gap: 20px;
+    margin-left: 30px;
+}
+.shop .product {
+    margin: 0;
+    transition: 0.5s;
+}
+.shop .product:hover {
+    box-shadow: 0px 5px 0px #ed768a;
+}
+.product-content .box img {
+    width: 100%;
+}
+.shop .heading-left {
+    margin-left: 22px;
+}
+
+.shop .chead {
+    padding: 10px 25px;
+}
+.shop .category {
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+.shop .cate-container{
+    width: 27%;
+    position: relative;
+    margin-top: 40px;
+}
+.shop .category .box {
+    padding: 10px 25px;
+    background: #f6f9fc;
+    margin: 20px;
+}
+.shop .category .brands-btn {
+    margin-top: 52px;
+    text-align: center;
+    background: #003a7ee0 !important;
+}
+
+.shop .category .brands-btn button {
+    background: none;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+}
+/* Media quiry */
+@media(max-width: 991px) {
+    .shop .cate-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        overflow-x: auto;
+    }
+    .shop .cate-container {
+        width: 100%;
+    }
+    .shop .category {
+        background-color: #f6f9fc;
+        padding: 0;
+        box-shadow: none;
+        display: block !important;
+    }
+    .shop .category .box {
+        background-color: #fff;
+        box-shadow: rgb(3 0 71 / 9%) 0px 2px 3px;
+        padding: 10px;
+        margin: 0px;
+        min-width: 130px;
+        margin: 0 5px;
+        gap: 7px;
+        font-size: 13px;
+        text-align: center;
+    }
+    .shop .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .shop .content-width{
+        width: 100%;
+    }
+    .shop .product-content {
+        margin-left: 0;
+    }
+    .shop .category .brands-btn{
+        padding: 12px;
+    }
+    .shop .chead {
+        padding: 10px 0;
+    }
+    .shop .heading-left {
+        margin-left: 0;
+    }
+}
+
+@media(max-width: 768px) {
+    .shop .category {
+        display: none;
+    }
+}

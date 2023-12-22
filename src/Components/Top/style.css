@@ -1,0 +1,29 @@
+.top-cate {
+    position: relative;
+  }
+  .top-cate img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+  }
+  .top-cate .name-top {
+    position: relative;
+  }
+  .top-cate .name-top span {
+    background: #0f3460;
+    color: #fff;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 50px;
+    margin: 5px;
+    position: absolute;
+    top: 10px;
+  }
+  .top-cate .name-top .tleft {
+    left: 0;
+  }
+  .top-cate .name-top .tright {
+    background-color: aliceblue;
+    color: black;
+    right: 0;
+  }
